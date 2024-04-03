@@ -5,6 +5,8 @@ using UnityEngine;
 public class MainInteract : MonoBehaviour
 {
     bool hovered;
+    public TutorialBox tutorial;
+    public string targetScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +23,11 @@ public class MainInteract : MonoBehaviour
 
     void OnMouseOver()
     {
-        if(!Input.GetMouseButton(0)){
-            hovered = true;
-            transform.localScale += new Vector3((1.2f-transform.localScale.x)/10,(1.2f-transform.localScale.y)/10,0);
-        } else {
+        if(Input.GetMouseButton(0)){
             hovered = false;
+        } else {
+            hovered = true;
+            transform.localScale += new Vector3((1.15f-transform.localScale.x)/10,(1.15f-transform.localScale.y)/10,0);
         }
     }
     void OnMouseExit()
@@ -34,6 +36,6 @@ public class MainInteract : MonoBehaviour
     }
     void OnMouseDown()
     {
-        Debug.Log("PING");
+        tutorial.StartCoroutine(tutorial.Appear());
     }
 }
