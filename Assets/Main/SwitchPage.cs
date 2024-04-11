@@ -7,11 +7,11 @@ public class SwitchPage : MonoBehaviour
     public bool inverse;
     public int page;
     public int maxPage;
-    public List<Animator> buttons;
+    public List<MainInteract> buttons;
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(FlipPage());
     }
 
     // Update is called once per frame
@@ -22,55 +22,26 @@ public class SwitchPage : MonoBehaviour
 
     void OnMouseDown()
     {
-        StartCoroutine(NextPage());
+        StartCoroutine(FlipPage());
     }
 
     public IEnumerator FlipPage()
     {
         page += 1;
-        if(page < maxPage){
-            for(int i = 0; i < 6; i++)
-            {
-                buttons[i+(page-1)].Play("LeftOut");
-                buttons[(i+(page))].Play("LeftIn");
-            }
-        } else {
+        if(page > maxPage){
             page = 0;
-            for(int i = 0; i < 6; i++)
-            {
-                buttons[i].Play("LeftOut");
-                buttons[(i+(page))].Play("LeftIn");
+        }
+        buttons.Clear();
+        foreach(GameObject button in GameObject.FindGameObjectsWithTag("MenuItem")){
+            buttons.Add(button.GetComponent<MainInteract>());
+        }
+        foreach(MainInteract button in buttons){
+            if(button.page == page){
+                button.StartCoroutine(button.Appear());
+            } else {
+                button.StartCoroutine(button.Disappear());
             }
         }
-        yield return 0;
-    }
-
-
-
-
-
-
-    public IEnumerator NextPage()
-    {
-        if(page >= maxPage){
-            for(int i = 0; i < 6; i++)
-            {
-                buttons[page].Play("LeftOut");
-                buttons[0].Play("LeftIn");
-            }
-            page = 0;
-        } else {
-            page += 1;
-            for(int i = 0; i < 6; i++)
-            {
-                buttons[page].Play("LeftOut");
-                buttons[page+1].Play("LeftIn");
-            }
-        }
-        yield return 0;
-    }
-    public IEnumerator LastPage()
-    {
         yield return 0;
     }
 }

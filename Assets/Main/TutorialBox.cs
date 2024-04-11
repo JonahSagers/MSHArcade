@@ -58,9 +58,10 @@ public class TutorialBox : MonoBehaviour
         }
     }
 
-    public IEnumerator Appear()
+    public IEnumerator Appear(string target)
     {
         if(!activated){
+            targetScene = target;
             anim.Play("Appear");
             yield return new WaitForSeconds(0.2f);
             activated = true;
