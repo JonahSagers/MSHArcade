@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ExitScene : MonoBehaviour
 {
     public int quit;
-    public TextMeshPro text;
+    public TextMeshProUGUI text;
+    public SpriteRenderer blackOut;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,8 @@ public class ExitScene : MonoBehaviour
             StartCoroutine(QuitCooldown());
         }
         if(quit >= 2){
-            Debug.Log("Quit");
-            Application.Quit();
+            StartCoroutine(LoadScene());
+            quit = -9999;
         }
     }
 
@@ -38,5 +40,26 @@ public class ExitScene : MonoBehaviour
         }
         text.color = new Color32(255,255,255,0);
         quit -= 1;
+    }
+
+    public IEnumerator LoadScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Home");
+        asyncLoad.allowSceneActivation = false;
+        StartCoroutine(BlackOut());
+        yield return new WaitForSeconds(2);
+        asyncLoad.allowSceneActivation = true;
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    public IEnumerator BlackOut()
+    {
+        while(blackOut.color.a < 1){
+            blackOut.color += new Color(0, 0, 0, 1f * Time.deltaTime);
+            yield return 0;
+        }
     }
 }

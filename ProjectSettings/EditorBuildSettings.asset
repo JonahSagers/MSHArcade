@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Klara.unity
     guid: f6b58ba2784aa864785e4272ac113acb
+  - enabled: 1
+    path: Assets/Scenes/Alex.unity
+    guid: 236ef8d0e2a29a242ba777d15ffa4fc5
+  - enabled: 1
+    path: Assets/Scenes/Lillian.unity
+    guid: 85d62d1d836d0e344b5b38740dcd4309
   m_configObjects: {}
