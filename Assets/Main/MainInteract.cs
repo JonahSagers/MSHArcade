@@ -7,6 +7,7 @@ public class MainInteract : MonoBehaviour
     bool hovered;
     public TutorialBox tutorial;
     public string targetScene;
+    public Sprite tutorialImage;
     public int page;
     public Animator anim;
     // Start is called before the first frame update
@@ -48,6 +49,6 @@ public class MainInteract : MonoBehaviour
     }
     void OnMouseDown()
     {
-        tutorial.StartCoroutine(tutorial.Appear(targetScene));
+        tutorial.StartCoroutine(tutorial.Appear(targetScene, tutorialImage));
     }
 }

@@ -58,7 +58,7 @@ public class TutorialBox : MonoBehaviour
         }
     }
 
-    public IEnumerator Appear(string target)
+    public IEnumerator Appear(string target, Sprite image)
     {
         if(!activated){
             targetScene = target;
