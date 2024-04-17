@@ -11,6 +11,7 @@ public class TutorialBox : MonoBehaviour
     public bool hovered;
     public string targetScene;
     public SpriteRenderer blackOut;
+    public SpriteRenderer render;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,7 @@ public class TutorialBox : MonoBehaviour
             anim.Play("Disappear");
         }
         if(!hovered && !Input.GetMouseButton(0)){
-            transform.localScale += new Vector3((3f-transform.localScale.x)/10,(3f-transform.localScale.y)/10,0);
+            transform.localScale += new Vector3((1f-transform.localScale.x)/10,(1f-transform.localScale.y)/10,0);
         }
     }
     void OnMouseEnter()
@@ -47,9 +48,9 @@ public class TutorialBox : MonoBehaviour
     void OnMouseOver()
     {
         if(Input.GetMouseButton(0)){
-            transform.localScale += new Vector3((2.8f-transform.localScale.x)/10,(2.8f-transform.localScale.y)/10,0);
+            transform.localScale += new Vector3((0.9f-transform.localScale.x)/10,(0.9f-transform.localScale.y)/10,0);
         } else {
-            transform.localScale += new Vector3((3f-transform.localScale.x)/10,(3f-transform.localScale.y)/10,0);
+            transform.localScale += new Vector3((1f-transform.localScale.x)/10,(1f-transform.localScale.y)/10,0);
         }
         if(Input.GetMouseButtonUp(0)){
             StartCoroutine(LoadScene());
@@ -62,6 +63,7 @@ public class TutorialBox : MonoBehaviour
     {
         if(!activated){
             targetScene = target;
+            render.sprite = image;
             anim.Play("Appear");
             yield return new WaitForSeconds(0.2f);
             activated = true;

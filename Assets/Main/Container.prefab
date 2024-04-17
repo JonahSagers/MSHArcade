@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorial: {fileID: 0}
   targetScene: 
+  tutorialImage: {fileID: 21300000, guid: 5585f616563650f45ac52a7506a7f02e, type: 3}
   page: 0
   anim: {fileID: 3644142081019978910}
 --- !u!61 &5456208737849809070
