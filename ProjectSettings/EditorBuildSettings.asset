@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lillian.unity
     guid: 85d62d1d836d0e344b5b38740dcd4309
+  - enabled: 1
+    path: Assets/Scenes/Jonas.unity
+    guid: e1310e2014222f64183afcc5897515a0
+  - enabled: 1
+    path: Assets/Scenes/JonasEnd.unity
+    guid: a2b124665f3b70e43a3c37968be8c998
   m_configObjects: {}

@@ -9,24 +9,24 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Blank 3
   - Water
   - UI
   - Ground
   - Player
   - Enemy
   - Collectable
-  - 
-  - 
-  - 
+  - Blank 10
+  - Blank 11
+  - Blank 12
   - Checkpoint
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Blank 14
+  - Blank 15
+  - Blank 16
+  - Blank 17
+  - Blank 18
+  - Blank 19
+  - Blank 20
   - 
   - 
   - 

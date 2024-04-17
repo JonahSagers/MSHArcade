@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: Alex
       objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_text
+      value: Alex Jarmusch
+      objectReference: {fileID: 0}
     - target: {fileID: 5635757320286430903, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Name
       value: Container (1)
@@ -857,6 +861,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: Lillian
       objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_text
+      value: Lillian Hobrath
+      objectReference: {fileID: 0}
     - target: {fileID: 5635757320286430903, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Name
       value: Container (2)
@@ -1273,6 +1281,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: Klara
       objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_text
+      value: Klara Herlitz
+      objectReference: {fileID: 0}
     - target: {fileID: 5635757320286430903, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Name
       value: Container
@@ -1353,6 +1365,14 @@ PrefabInstance:
       propertyPath: tutorial
       value: 
       objectReference: {fileID: 843465005}
+    - target: {fileID: 3882265776885922660, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: targetScene
+      value: Jonas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_text
+      value: Jonas Baird
+      objectReference: {fileID: 0}
     - target: {fileID: 5635757320286430903, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Name
       value: Container (3)
