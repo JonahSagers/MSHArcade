@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stephen.unity
     guid: 98791d3e7d6ae45488f7a17cd03aa86d
+  - enabled: 1
+    path: Assets/Scenes/Class2024.unity
+    guid: 251795f1272195b499c992a499f78b27
   m_configObjects: {}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class DelayedDelete : MonoBehaviour
 {
     public ParticleSystem particles;
+    public bool isPrime;
     // Start is called before the first frame update
     void Awake()
     {
@@ -14,10 +15,9 @@ public class DelayedDelete : MonoBehaviour
     // Update is called once per frame
     public IEnumerator Countdown(float duration)
     {
-        
         transform.parent = null;
         if(particles != null){
-            if(gameObject.name == "Outbreak Particles"){
+            if(isPrime){
                 var particlesMain = particles.main;
                 particlesMain.maxParticles = GameObject.Find("Virus").GetComponent<Move>().swarmCount;
             }

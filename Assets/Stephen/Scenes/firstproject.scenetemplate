@@ -65,26 +65,54 @@ MonoBehaviour:
   description: This is my first project which has platformer physics and stuff
   preview: {fileID: -1440705055186041953}
   dependencies:
-  - dependency: {fileID: 2800000, guid: 59ff82bfd1157294e98aac00f73c4c06, type: 3}
+  - dependency: {fileID: 2800000, guid: 15a6a56eb22f8de42a791f3b71f417d5, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  - dependency: {fileID: 2800000, guid: 7c69fe24b9cd9a94685868df5c9b3c3d, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: ccfe697535b5daa4093d67e69267fe30, type: 3}
+  - dependency: {fileID: 2800000, guid: 5585f616563650f45ac52a7506a7f02e, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 11400000, guid: f508186f9ff979d4d80744da570ccaf7, type: 2}
+  - dependency: {fileID: 9100000, guid: 202f59d9d69ea934d9fbd2e310497135, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 7f4d34429023ea7498d6409096f961f0, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 9100000, guid: 9383f2885f726b84db34387671c9abde, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 6376726703907084880, guid: cced3517fc955df4ba2c54c0e467faf4, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 48c78395d4ba8424793bb17e0e7c1133, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: ee148e281f3c41c5b4ff5f8a5afe5a6c, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: bfcb98f17ed11754bb2c3181e5f79a68, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 2fd6421f253b4ef1a19526541f9ffc0c, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 11400000, guid: d079ab6d6cd6133468e4e0a2ae9b6f83, type: 2}
-    instantiationMode: 1
-  - dependency: {fileID: 11400000, guid: 6703b5d4373090d4a9feb49c0654be03, type: 2}
-    instantiationMode: 1
-  - dependency: {fileID: 8300000, guid: 41aa156c47d30a643ba05eee785918e1, type: 3}
-    instantiationMode: 1
-  - dependency: {fileID: 6200000, guid: 91b3283cee2367841ad0e85ba1db11b2, type: 2}
+  - dependency: {fileID: 2800000, guid: 20bef9ce84d698745a6ae4d7a64a5832, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 5f2a108eb023faf43a809979fd3d38f2, type: 3}
+  - dependency: {fileID: 2800000, guid: 46bb7b589c85dca40bfe380e14406486, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: d0d1aa0bc20c18b4b9840e9fa8bd5f9a, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: fe7a5400695f67542876bc287d5491fd, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: f70e8b1c739a1ae4d8a9aac186c42607, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 81b77e30d37ebde4dabbb9ef76d00af0, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 5635757320286430903, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     instantiationMode: 1
+  - dependency: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: feebc392c81d00d409313a5bf9119d38, type: 3}
+    instantiationMode: 0
   templatePipeline: {fileID: 0}
   badge: {fileID: 0}
   addToDefaults: 1

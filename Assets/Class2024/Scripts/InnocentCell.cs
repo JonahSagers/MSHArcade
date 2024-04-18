@@ -35,37 +35,38 @@ public class InnocentCell : MonoBehaviour
     {
         StartCoroutine(PlayVideo());
         infected = true;
-        red = 0;
-        while(red < 1){
-            red += 0.02f;
-            render.color = new Color(1,1 - red,1 - red);
-            yield return new WaitForSeconds(0.02f);
-        }
+        // red = 0;
+        // while(red < 1){
+        //     red += 0.02f;
+        //     render.color = new Color(1,1 - red,1 - red);
+        //     yield return new WaitForSeconds(0.02f);
+        // }
         //playerMove.swarmCount *= 2;
         //transform.GetChild(0).GetComponent<DelayedDelete>().StartCoroutine(transform.GetChild(0).GetComponent<DelayedDelete>().Countdown(3));
         //Destroy(gameObject);
+        yield return 0;
     }
     IEnumerator PlayVideo()
     {
-        while(Time.timeScale > 0.1f){
-            Time.timeScale /= 1.1f;
-            yield return new WaitForSecondsRealtime(0.05f);
-        }
-        Time.timeScale = 0;
-        video.targetCameraAlpha = 0;
-        video.Play();
-        while(video.targetCameraAlpha < 1f){
-            //video.targetCameraAlpha += (1 - video.targetCameraAlpha)/10;
-            video.targetCameraAlpha += 0.01f;
-            yield return new WaitForSecondsRealtime(0.02f);
-        }
-        yield return new WaitForSecondsRealtime(3f);
-        while(video.targetCameraAlpha > 0f){
-            //video.targetCameraAlpha += (1 - video.targetCameraAlpha)/10;
-            video.targetCameraAlpha -= 0.02f;
-            yield return new WaitForSecondsRealtime(0.02f);
-        }
-        yield return new WaitForSecondsRealtime(1f);
+        // while(Time.timeScale > 0.1f){
+        //     Time.timeScale /= 1.1f;
+        //     yield return new WaitForSecondsRealtime(0.05f);
+        // }
+        // Time.timeScale = 0;
+        // video.targetCameraAlpha = 0;
+        // video.Play();
+        // while(video.targetCameraAlpha < 1f){
+        //     //video.targetCameraAlpha += (1 - video.targetCameraAlpha)/10;
+        //     video.targetCameraAlpha += 0.01f;
+        //     yield return new WaitForSecondsRealtime(0.02f);
+        // }
+        // yield return new WaitForSecondsRealtime(3f);
+        // while(video.targetCameraAlpha > 0f){
+        //     //video.targetCameraAlpha += (1 - video.targetCameraAlpha)/10;
+        //     video.targetCameraAlpha -= 0.02f;
+        //     yield return new WaitForSecondsRealtime(0.02f);
+        // }
+        // yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1;
         video.gameObject.transform.parent.GetChild(0).gameObject.GetComponent<Animator>().Play("ScreenShake");
         transform.GetChild(0).GetComponent<DelayedDelete>().StartCoroutine(transform.GetChild(0).GetComponent<DelayedDelete>().Countdown(10f));
@@ -74,6 +75,7 @@ public class InnocentCell : MonoBehaviour
             transform.localScale /= 1.05f;
             yield return new WaitForSecondsRealtime(0.01f);
         }
+        transform.DetachChildren();
         Destroy(gameObject);
     }
     /*IEnumerator CameraShake(int amount){
