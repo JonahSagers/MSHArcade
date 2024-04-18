@@ -99,13 +99,13 @@ public class movescript : MonoBehaviour
 
 
 
-        if(Input.GetKey(KeyCode.LeftShift)){
-            rb.gravityScale=0;
-            rb.velocity = new Vector3(rb.velocity.x,5);
-            // this lets you fly
-        } else {
-            rb.gravityScale=1;
-        }
+        // if(Input.GetKey(KeyCode.LeftShift)){
+        //     rb.gravityScale=0;
+        //     rb.velocity = new Vector3(rb.velocity.x,5);
+        //     // this lets you fly
+        // } else {
+        //     rb.gravityScale=1;
+        // }
 
         if(Input.GetKeyDown(KeyCode.Z)){
             if(havePistol==1){
@@ -133,7 +133,7 @@ public class movescript : MonoBehaviour
             }
             Restart=20;
         }
-        if(Input.GetKeyDown(KeyCode.RightShift)){
+        if(Input.GetKeyDown(KeyCode.LeftShift)){
             if(CookedFood>0){
                 if(Health<10){
                     Health+=2;
