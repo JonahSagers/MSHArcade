@@ -18,7 +18,7 @@ public class ExitScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)){
+        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.BackQuote)){
             quit += 1;
             StartCoroutine(QuitCooldown());
         }
@@ -44,6 +44,9 @@ public class ExitScene : MonoBehaviour
 
     public IEnumerator LoadScene()
     {
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Persist");
+        foreach(GameObject obj in objects)
+            Destroy(obj);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Home");
         asyncLoad.allowSceneActivation = false;
         StartCoroutine(BlackOut());
