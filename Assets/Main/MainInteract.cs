@@ -49,6 +49,8 @@ public class MainInteract : MonoBehaviour
     }
     void OnMouseDown()
     {
-        tutorial.StartCoroutine(tutorial.Appear(targetScene, tutorialImage));
+        if(targetScene != ""){
+            tutorial.StartCoroutine(tutorial.Appear(targetScene, tutorialImage));
+        }
     }
 }

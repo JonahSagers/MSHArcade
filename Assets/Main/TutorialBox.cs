@@ -52,7 +52,7 @@ public class TutorialBox : MonoBehaviour
         } else {
             transform.localScale += new Vector3((1f-transform.localScale.x)/10,(1f-transform.localScale.y)/10,0);
         }
-        if(Input.GetMouseButtonUp(0)){
+        if(Input.GetMouseButtonUp(0) && activated == true){
             StartCoroutine(LoadScene());
             activated = false;
             anim.Play("Disappear");

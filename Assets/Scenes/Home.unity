@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: Alex
       objectReference: {fileID: 0}
+    - target: {fileID: 3882265776885922660, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: tutorialImage
+      value: 
+      objectReference: {fileID: 21300000, guid: fbefff9b45fb7bf4c9f037510dc1bd83, type: 3}
     - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_text
       value: Alex Jarmusch
@@ -277,11 +281,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.b
-      value: 0.57254905
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.g
-      value: 0.61960787
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.r
@@ -311,6 +315,18 @@ PrefabInstance:
       propertyPath: tutorial
       value: 
       objectReference: {fileID: 843465005}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_text
+      value: Not Coming Soon!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_fontSize
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 4.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5635757320286430903, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Name
       value: Container (7)
@@ -356,12 +372,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8574f87c22fd42a46b67f329d868c5c7, type: 3}
+    - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.b
-      value: 0.57254905
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.g
-      value: 0.61960787
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.r
@@ -542,6 +562,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: Stephen
       objectReference: {fileID: 0}
+    - target: {fileID: 3882265776885922660, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: tutorialImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c8475f9bba9b8649809c489b7244b98, type: 3}
     - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_text
       value: Stephen Parrino
@@ -5616,6 +5640,10 @@ PrefabInstance:
       propertyPath: delay
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 9015682950893456044, guid: cced3517fc955df4ba2c54c0e467faf4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5645,6 +5673,30 @@ PrefabInstance:
     - target: {fileID: 3882265776885922660, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: targetScene
       value: Class2024
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882265776885922660, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: tutorialImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f59958bfab86594eb8249d41cec8039, type: 3}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_text
+      value: Class of 2024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.44588152
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4188679
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4285726571
       objectReference: {fileID: 0}
     - target: {fileID: 5635757320286430903, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Name
@@ -5734,6 +5786,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: Lillian
       objectReference: {fileID: 0}
+    - target: {fileID: 3882265776885922660, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: tutorialImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 40ab17b981e09654ea81d2e90c688675, type: 3}
     - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_text
       value: Lillian Hobrath
@@ -6045,11 +6101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.b
-      value: 0.57254905
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.g
-      value: 0.61960787
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.r
@@ -6125,11 +6181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.r
@@ -6159,6 +6215,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: Klara
       objectReference: {fileID: 0}
+    - target: {fileID: 3882265776885922660, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
+      propertyPath: tutorialImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 58a4e687b6dcaed43ae335b82e035e93, type: 3}
     - target: {fileID: 5263277891444806033, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_text
       value: Klara Herlitz
@@ -6401,11 +6461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.b
-      value: 0.57254905
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.g
-      value: 0.61755246
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.r
@@ -6481,11 +6541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.b
-      value: 0.57254905
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.g
-      value: 0.61960787
+      value: 0.60754716
       objectReference: {fileID: 0}
     - target: {fileID: 7923764529855668688, guid: c687280731522fd4d8b7821c125cc93d, type: 3}
       propertyPath: m_Color.r
